@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2023-05-04
+  Features:
+    - Initial release.
+    - Adds Loaders for Bob's Logistics belts.
+    - Adds easy mode recipes.
+    - Provides options for modifying base/vanilla loaders to match recipes.
