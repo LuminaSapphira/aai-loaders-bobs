@@ -1,8 +1,21 @@
 -- Set Express Loader tech's packs to match adjusted logistics 3
-data.raw["technology"]["aai-express-loader"].unit.ingredients = table.deepcopy(data.raw["technology"]["logistics-3"].unit.ingredients)
-data.raw["technology"]["aai-express-loader"].unit.count = data.raw["technology"]["logistics-3"].unit.count * 1.5
-data.raw["technology"]["aai-express-loader"].unit.time = data.raw["technology"]["logistics-3"].unit.time * 1.5
-
+local aai_express_tech = data.raw["technology"]["aai-express-loader"]
+local logistics_3 = data.raw["technology"]["logistics-3"]
+aai_express_tech.unit.ingredients = table.deepcopy(logistics_3.unit.ingredients)
+aai_express_tech.unit.count = logistics_3.unit.count * 1.5
+aai_express_tech.unit.time = logistics_3.unit.time * 1.5
+-- Remove the production prerequisite if it's not an ingredient
+if not aai_express_tech.unit.ingredients["production-science-pack"] then
+    local found = -1
+    for i,v in ipairs(aai_express_tech.prerequisites) do
+        if v == "production-science-pack" then
+            found = i
+        end
+    end
+    if found >= 0 then
+        table.remove(aai_express_tech.prerequisites, found)
+    end
+end
 
 local function adjust_recipes_aai()
     if settings.startup["aai-loaders-mode"].value == "lubricated" then
@@ -100,7 +113,7 @@ local function adjust_recipes_easy()
     end
 end
 
-require("utils")
+local require_previous_tier = require("utils").require_previous_tier
 
 -- Set aai loaders to a more basic recipe, inline with bobs, if desired
 if settings.startup["aai-loaders-bobs-adjust-base-loaders-recipe"].value then
