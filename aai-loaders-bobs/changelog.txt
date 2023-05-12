@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2023-05-04
+  Bugfixes:
+    - Fixed production science pack technology being listed as a prerequisite even if they aren't ingredients.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2023-05-04
   Features:
