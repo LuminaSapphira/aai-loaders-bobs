@@ -1,4 +1,4 @@
-require("utils")
+local require_previous_tier = require("utils").require_previous_tier
 
 local function make_recipes_aai_bobnew(tiers)
     if tiers["basic"] then
