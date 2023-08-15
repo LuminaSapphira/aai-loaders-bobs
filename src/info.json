@@ -1,8 +1,8 @@
  {
     "name": "aai-loaders-bobs",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "title": "AAI Loaders: Bob's Mods",
-    "author": "CerulanLumina",
+    "author": "CerulanLumina, Braxbro",
     "factorio_version": "1.1",
     "description": "Adds loaders with configurable recipes for Bob's Logistics belts to AAI Loaders.",
     "dependencies": [
@@ -12,6 +12,11 @@
         "? reskins-bobs",
         "? prismatic-belts",
         "? boblogistics-belt-reskin",
-        "! aai-loader-rebalance"
+        "! aai-loader-rebalance",
+        "! aai-industry",
+        "! IndustrialRevolution3",
+        "! Krastorio2",
+        "! space-exploration",
+        "! pypostprocessing"
     ]
  }

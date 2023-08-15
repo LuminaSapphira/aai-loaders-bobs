@@ -1,14 +1,15 @@
 data:extend({
     {
-        type = "bool-setting",
-        name = "aai-loaders-bobs-adjust-base-loaders-recipe",
+        type = "string-setting",
+        name = "aai-loaders-bobs-rewrite-recipe-style",
         setting_type = "startup",
-        default_value = true,
+        default_value = "boblogistics",
+        allowed_values = {"aai-loaders", "boblogistics"}, -- use 'mods["modname"] and "modname"' for non-dependencies/optional dependencies
         order = "a",
     },
     {
         type = "string-setting",
-        name = "aai-loaders-bobs-require-previous-tier",
+        name = "aai-loaders-bobs-rewrite-require-previous-tier",
         setting_type = "startup",
         default_value = "no-change",
         allowed_values = {"no-change", "force-enable", "force-disable"},
@@ -16,7 +17,7 @@ data:extend({
     },
     {
         type = "bool-setting",
-        name = "aai-loaders-bobs-easy-mode",
+        name = "aai-loaders-bobs-rewrite-easy-mode",
         setting_type = "startup",
         default_value = false,
         order = "z",
