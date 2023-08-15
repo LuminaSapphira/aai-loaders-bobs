@@ -1,0 +1,45 @@
+{
+    "entity":
+    [
+        ["aai-bobs-basic-loader", "aai-boblogistics-basic-loader"],
+        ["aai-loader", "aai-boblogistics-loader"],
+        ["aai-fast-loader", "aai-boblogistics-fast-loader"],
+        ["aai-express-loader", "aai-boblogistics-express-loader"],
+        ["aai-bobs-turbo-loader", "aai-boblogistics-turbo-loader"],
+        ["aai-bobs-ultimate-loader", "aai-boblogistics-ultimate-loader"],
+
+        ["aai-bobs-basic-loader-pipe", "aai-boblogistics-basic-loader-pipe"],
+        ["aai-loader-pipe", "aai-boblogistics-loader-pipe"],
+        ["aai-fast-loader-pipe", "aai-boblogistics-fast-loader-pipe"],
+        ["aai-express-loader-pipe", "aai-boblogistics-express-loader-pipe"],
+        ["aai-bobs-turbo-loader-pipe", "aai-boblogistics-turbo-loader-pipe"],
+        ["aai-bobs-ultimate-loader-pipe", "aai-boblogistics-ultimate-loader-pipe"]
+    ],
+    "item":
+    [
+        ["aai-bobs-basic-loader", "aai-boblogistics-basic-loader"],
+        ["aai-loader", "aai-boblogistics-loader"],
+        ["aai-fast-loader", "aai-boblogistics-fast-loader"],
+        ["aai-express-loader", "aai-boblogistics-express-loader"],
+        ["aai-bobs-turbo-loader", "aai-boblogistics-turbo-loader"],
+        ["aai-bobs-ultimate-loader", "aai-boblogistics-ultimate-loader"]
+    ],
+    "technology":
+    [
+        ["aai-bobs-basic-loader", "aai-boblogistics-basic-loader"],
+        ["aai-loader", "aai-boblogistics-loader"],
+        ["aai-fast-loader", "aai-boblogistics-fast-loader"],
+        ["aai-express-loader", "aai-boblogistics-express-loader"],
+        ["aai-bobs-turbo-loader", "aai-boblogistics-turbo-loader"],
+        ["aai-bobs-ultimate-loader", "aai-boblogistics-ultimate-loader"]
+    ],
+    "recipe":
+    [
+        ["aai-bobs-basic-loader", "aai-boblogistics-basic-loader"],
+        ["aai-loader", "aai-boblogistics-loader"],
+        ["aai-fast-loader", "aai-boblogistics-fast-loader"],
+        ["aai-express-loader", "aai-boblogistics-express-loader"],
+        ["aai-bobs-turbo-loader", "aai-boblogistics-turbo-loader"],
+        ["aai-bobs-ultimate-loader", "aai-boblogistics-ultimate-loader"]
+    ]
+}
