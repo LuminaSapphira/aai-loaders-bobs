@@ -68,7 +68,7 @@ for mod, _ in pairs(mods) do -- don't care what version atm
     if beltTiers[mod] then
         for tier, index in pairs(beltTiers[mod]) do -- if it doesn't exist, it won't be found by pairs bc it'd be an element set to nil (and thus deleted)
             local fluidToUse = "lubricant"
-            if ((earlyLube and 1) + index) < 3 then
+            if ((earlyLube and 1 or 0) + index) < 3 then
                 fluidToUse = "water"
             end
             local techUnit
