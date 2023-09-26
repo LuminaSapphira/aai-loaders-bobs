@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.0
+Version: 1.0.1
 Date: 2023-09-26
   Bugfixes:
     - Fixed crash on startup when early lubricant recipe was disabled.
